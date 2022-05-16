@@ -25,10 +25,13 @@ and if the soil is too dry, the water pumps will irrigate it.
 
 # Project Steps:
 First, I am testing one moisture sensor to make sure it works properly. 
-Moisture sensors measure resistance, which varies based on the amount of water present in soil. Wet soil is much butter at conducting electricity than dry soil,
-which means that wet soil has a lower resistance than dry soil (https://lastminuteengineers.com/soil-moisture-sensor-arduino-tutorial/).
+Moisture sensors measure resistance, which varies based on the amount of water present in soil. Wet soil is much butter at conducting electricity than dry,
+which means that wet soil has a lower resistance than dry soil (https://lastminuteengineers.com/soil-moisture-sensor-arduino-tutorial/). To test that the sensor is working correctly, I set a threshold of 460 in the code. When the reading is above 500, then the soil is too dry and the plant needs to be watered. Then, in the serial monitor, I display the results.
 
 ![Diagram](Moisture_Sensor.PNG)
+I first just lay the sensor on the table (the air is dry, so reading > 460) and then dip it in a cup of water to test (water reading is obviously < 460).
+
+
 
 
 
