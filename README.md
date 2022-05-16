@@ -23,6 +23,10 @@ and if the soil is too dry, the water pumps will irrigate it.
 * https://youtu.be/JdvnfENodak
 * https://www.youtube.com/watch?v=BFLPmhYbRfY 
 
+# Project Steps:
+First, I am testing one moisture sensor to make sure it works properly. 
+Moisture sensors measure resistance, which varies based on the amount of water present in soil. Wet soil is much butter at conducting electricity than dry soil,
+which means that wet soil has a lower resistance than dry soil (https://lastminuteengineers.com/soil-moisture-sensor-arduino-tutorial/).
 
 
 
