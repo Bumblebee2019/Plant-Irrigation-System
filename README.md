@@ -30,7 +30,7 @@ which means that wet soil has a lower resistance than dry soil (https://lastminu
 
 ![Diagram](Moisture_Sensor.PNG)
 I first just lay the sensor on the table (the air is dry, so reading > 460) and then dip it in a cup of water to test (water reading is obviously < 460).
-
+![Diagram](Serial_Monitor_Reading.PNG)
 
 
 
