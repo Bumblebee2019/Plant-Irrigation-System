@@ -18,11 +18,6 @@ The 4 soil moisture sensors are connected to the arduino through the jumper wire
 relay. The 4 channel relay is connected to the small water pumps and the batteries. Once the device is finished, the sensors will be inserted into the soil 
 and if the soil is too dry, the water pumps will irrigate it.
 
-## Projects I was inspired by:
-* https://youtu.be/nUHizmtyt74 
-* https://youtu.be/JdvnfENodak
-* https://www.youtube.com/watch?v=BFLPmhYbRfY 
-
 # Project Steps:
 First, I am testing one moisture sensor to make sure it works properly. 
 Moisture sensors measure resistance, which varies based on the amount of water present in soil. Wet soil is much butter at conducting electricity than dry,
@@ -31,6 +26,22 @@ which means that wet soil has a lower resistance than dry soil (https://lastminu
 ![Diagram](Moisture_Sensor.PNG)
 I first just lay the sensor on the table (the air is dry, so reading > 460) and then dip it in a cup of water to test (water reading is obviously < 460).
 ![Diagram](Serial_Monitor_Reading.PNG)
+
+Second, I am adding the water pump and connect a tube to it, so the water can reach my plant!
+
+### Sources I referenced:
+The first three are for the general project structure, parts, and code guidance
+* https://youtu.be/nUHizmtyt74 
+* https://youtu.be/JdvnfENodak
+* https://www.youtube.com/watch?v=BFLPmhYbRfY 
+
+The next ones are for the second part of the project; helped me with LCD interfacing and moisture calcuations:
+* https://create.arduino.cc/projecthub/Dynamic_Innovator/make-your-own-soil-moisture-sensor-with-arduino-9b3b89
+* https://youtu.be/l4GPRTsuHkI
+
+
+
+
 
 
 
