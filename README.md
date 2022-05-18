@@ -22,6 +22,8 @@ only the side that has the sensor will be watered. To encourage water to be equa
 connect an LCD to the Arduino and display when was the last time the plant was watered, and the current soil moisture. My device will also detect if there is
 enough water left in the tank. If not, it will send a signal to turn on the second water pump.
 
+## Video Demos:
+Part 1: https://youtu.be/mjuMYY3UxP0
 
 # Project Steps:
 First, I am testing one moisture sensor to make sure it works properly. 
@@ -33,9 +35,7 @@ I first just lay the sensor on the table (the air is dry, so reading > 460) and 
 ![Diagram](Serial_Monitor_Reading.PNG)
 
 Second, I am adding the water pump and connect a tube to it, so the water can reach my plant!
-
-
-Short video demo of the first part: https://youtu.be/mjuMYY3UxP0
+![Diagram](Irrigation_setup.PNG)
 
 
 ### Sources I referenced:
