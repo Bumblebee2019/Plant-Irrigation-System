@@ -36,6 +36,7 @@ I first just lay the sensor on the table (the air is dry, so reading > 460) and 
 
 Second, I am adding the water pump and connect a tube to it, so the water can reach my plant!
 ![Diagram](Irrigation_setup.PNG)
+![Diagram](Setup_with_plant.PNG)
 
 
 ### Sources I referenced:
