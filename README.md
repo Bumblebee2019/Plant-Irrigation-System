@@ -13,10 +13,10 @@ I will utilize the following parts:
 * Soil moisture sensors
 * Tubes
 * 4 channel relays
-* 4 water pumps
-The 4 soil moisture sensors are connected to the arduino through the jumper wires (so they can reach to a plant). The arduino is connected to the 4 channel 
+* 2 water pumps
+The 2 soil moisture sensors are connected to the arduino through the jumper wires (so they can reach to a plant). The arduino is connected to the 4 channel 
 relay. The 4 channel relay is connected to the small water pumps and the batteries. Once the device is finished, the sensors will be inserted into the soil 
-and if the soil is too dry, the water pumps will irrigate it.
+and if the soil is too dry, the water pumps will irrigate it. I will also include an LCD, that will diplay the last time the plant was watered and the current soil moisture level.
 
 # Project Steps:
 First, I am testing one moisture sensor to make sure it works properly. 
@@ -28,6 +28,7 @@ I first just lay the sensor on the table (the air is dry, so reading > 460) and 
 ![Diagram](Serial_Monitor_Reading.PNG)
 
 Second, I am adding the water pump and connect a tube to it, so the water can reach my plant!
+
 
 ### Sources I referenced:
 The first three are for the general project structure, parts, and code guidance
