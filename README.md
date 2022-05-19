@@ -45,7 +45,7 @@ Water moisture correlates to 100%
 ![Diagram](Moisture_100_Percent.PNG)
 
 Now that I checked that the percent are correct, I can measure the moisture of my plant's soil. I watered it yesterday, so yes, 75% seems correct!
-![Diagram](Setup_with_plant.PNG)
+![Diagram](Plant_moisure_reading.PNG)
 
 ### Sources I referenced:
 The first three are for the general project structure, parts, and code guidance
