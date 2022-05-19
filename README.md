@@ -42,7 +42,7 @@ Then, I added the LCD to display current soil moisture in percent. I mapped raw 
 ![Diagram](Moisture_1_percent.PNG)
 
 Water moisture correlates to 100%
-![Diagram](Moisture_100_percent.PNG)
+![Diagram](Moisture_100_Percent.PNG)
 
 Now that I checked that the percent are correct, I can measure the moisture of my plant's soil. I watered it yesterday, so yes, 75% seems correct!
 ![Diagram](Setup_with_plant.PNG)
