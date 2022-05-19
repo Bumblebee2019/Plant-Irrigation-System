@@ -38,6 +38,14 @@ Second, I am adding the water pump and connect a tube to it, so the water can re
 ![Diagram](Irrigation_setup.PNG)
 ![Diagram](Setup_with_plant.PNG)
 
+Then, I added the LCD to display current soil moisture in percent. I mapped raw sensor readings values between 0 and 100. I took moisture of surrounding air to be 0%:
+![Diagram](Moisture_1_percent.PNG)
+
+Water moisture correlates to 100%
+![Diagram](Moisture_100_percent.PNG)
+
+Now that I checked that the percent are correct, I can measure the moisture of my plant's soil. I watered it yesterday, so yes, 75% seems correct!
+![Diagram](Setup_with_plant.PNG)
 
 ### Sources I referenced:
 The first three are for the general project structure, parts, and code guidance
