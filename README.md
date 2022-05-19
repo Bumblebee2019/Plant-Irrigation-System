@@ -46,8 +46,8 @@ The first three are for the general project structure, parts, and code guidance
 * https://www.youtube.com/watch?v=BFLPmhYbRfY 
 
 The next ones are for the second part of the project; helped me with LCD interfacing and moisture calcuations:
-* https://create.arduino.cc/projecthub/Dynamic_Innovator/make-your-own-soil-moisture-sensor-with-arduino-9b3b89
 * https://youtu.be/l4GPRTsuHkI
+* https://youtu.be/Al4QPNpvtQE
 
 
 
