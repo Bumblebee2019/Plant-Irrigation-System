@@ -48,7 +48,7 @@ Now that I checked that the percent are correct, I can measure the moisture of m
 ![Diagram](Plant_moisure_reading.PNG)
 
 In addition to soil moisture, it is useful to know when the plant was last watered. I use a millis() function, which returns the number of milliseconds since the time the device was connected to power. From having this information, we can determine the number of days elapsed.
-
+![Diagram](Last_Watered.PNG)
 
 ### Sources I referenced:
 The first three are for the general project structure, parts, and code guidance
