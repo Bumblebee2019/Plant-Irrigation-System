@@ -56,6 +56,7 @@ The first three are for the general project structure, parts, and code guidance
 The next ones are for the second part of the project; helped me with LCD interfacing and moisture calcuations:
 * https://youtu.be/l4GPRTsuHkI
 * https://youtu.be/Al4QPNpvtQE
+* https://forum.arduino.cc/t/measuring-time/96602/23 
 
 
 
