@@ -24,9 +24,17 @@ bool is_watered = false;
 bool is_watered_2 = false;
 bool is_first_tank_empty = false;
 bool is_second_tank_empty = false;
+int LED1 = 10;
+int LED2 = 9;
+int LED3 = 8;
+int LED4 = 3;
 
 void setup() {
   // put your setup code here, to run once:
+  pinMode(LED1, OUTPUT);
+  pinMode(LED2, OUTPUT);
+  pinMode(LED3, OUTPUT);
+  pinMode(LED4, OUTPUT);
   lcd.begin(16,2);
   pinMode(IN1, OUTPUT);
   pinMode(IN2, OUTPUT); 
@@ -44,6 +52,25 @@ void last_time_watered() {
   lcd.print(" seconds ago");
   //}
 } 
+
+void led_manager() {
+  digitalWrite(LED1, HIGH);
+  delay(100);
+  digitalWrite(LED2, HIGH);
+  delay(100);
+  digitalWrite(LED3, HIGH);
+  delay(100);
+  digitalWrite(LED4, HIGH);
+  delay(100);
+  digitalWrite(LED1, LOW);
+  delay(100);
+  digitalWrite(LED2, LOW);
+  delay(100);
+  digitalWrite(LED3, LOW);
+  delay(100);
+  digitalWrite(LED4, LOW);
+  delay(100);
+}
 
 void pump_manager() {
   lcd.setCursor(0,1);
@@ -84,13 +111,16 @@ void pump_manager() {
   else {
     digitalWrite(IN1, HIGH);
   }
-  if(is_second_tank_empty && is_first_tank_empty) {
+  while (is_second_tank_empty && is_first_tank_empty) {
     tone(11, 1000, 500);
+    led_manager();
     lcd.clear();
     lcd.setCursor(0,0);
     lcd.print("    WARNING");
+    led_manager();
     lcd.setCursor(0,1);
     lcd.print("Both tanks empty");
+    led_manager();
   }
 }
 
