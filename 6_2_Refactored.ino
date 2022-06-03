@@ -1,3 +1,7 @@
+/*
+ * Output on LCD: "Moisture: <percent>%"
+ */
+//https://www.youtube.com/watch?v=AQIayZgeqq4
 #include <LiquidCrystal.h>
 #include <string.h>
 
@@ -9,6 +13,7 @@ int IN2 = 12;
 
 //initiliazing connection between the moisture sensor and Arduino
 unsigned long ms_since_pump_tunred_on = 0;
+const int threshold = 440;
 int Pin1 = A0;
 float sensor_1_val = 0;
 int low_moisture = 488;
@@ -71,7 +76,7 @@ void pump_manager() {
   display("Moisture: " + get_percent() + "%", 0, true);
   delay(1000);
   
-  if(sensor_1_val > 460) {  //if the soil is dry then we open the relay, if wet, close the relay
+  if(sensor_1_val > threshold) {  //if the soil is dry then we open the relay, if wet, close the relay
     if(is_first_tank_empty == true) { //if the tank is empty, there is no need to turn the pump on in vain
       digitalWrite(IN1, HIGH); // turn off the pump One: the tank 1 is empty
     }
@@ -91,7 +96,7 @@ void pump_manager() {
     delay(3000);
     
     //-----------check if water tank #2 is empty---------//
-    if(is_watered_1 && sensor_1_val > 460) {  //if the pump was working but the soil remained as dry as before
+    if(is_watered_1 && sensor_1_val > threshold) {  //if the pump was working but the soil remained as dry as before
         is_first_tank_empty = true;
         digitalWrite(IN1, HIGH); //turn off the pump One
         digitalWrite(IN2, LOW); //turn on the Pump Two
@@ -102,7 +107,7 @@ void pump_manager() {
         sensor_1_val = analogRead(Pin1);
         display("Moisture: " + get_percent() + "%", 0, true);
         delay(3000);
-        if (is_watered_2 && sensor_1_val > 460) { //if the second water tank is empty as well, we turn the water pump off 
+        if (is_watered_2 && sensor_1_val > threshold) { //if the second water tank is empty as well, we turn the water pump off 
           digitalWrite(IN2, HIGH); //turn off the pump Two
           is_second_tank_empty = true;
         }
