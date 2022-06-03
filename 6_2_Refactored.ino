@@ -1,7 +1,3 @@
-/*
- * Output on LCD: "Moisture: <percent>%"
- */
-//https://www.youtube.com/watch?v=AQIayZgeqq4
 #include <LiquidCrystal.h>
 #include <string.h>
 
