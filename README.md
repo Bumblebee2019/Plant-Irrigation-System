@@ -1,5 +1,6 @@
 # Plant-Irrigation-System
 ![Diagram](Plant.PNG)
+Full Demo: https://www.youtube.com/watch?v=Bc0HlL-huTw&t=8s 
 # Proposal
 ## Project Significance:
 Indoor plants not only enliven the room, but are also known to improve quality of air. Unfortunately, people sometimes forget to water their plants due 
